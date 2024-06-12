@@ -29,14 +29,14 @@ namespace FI.AtividadeEntrevista.BLL
         }
 
         /// <summary>
-        /// Consulta o cliente pelo id
+        /// Consulta o beneficiário pelo id
         /// </summary>
-        /// <param name="id">id do cliente</param>
+        /// <param name="id">id do beneficiário</param>
         /// <returns></returns>
-        public DML.Cliente Consultar(long id)
+        public DML.Beneficiario Consultar(long id)
         {
-            DAL.DaoBeneficiario ben = new DAL.DaoCliente();
-            return cli.Consultar(id);
+            DAL.DaoBeneficiario ben = new DAL.DaoBeneficiario();
+            return ben.Consultar(id);
         }
 
         public string ConsultarCpf(string cpf)
@@ -69,10 +69,10 @@ namespace FI.AtividadeEntrevista.BLL
         /// <summary>
         /// Lista os clientes
         /// </summary>
-        public List<DML.Cliente> Pesquisa(int iniciarEm, int quantidade, string campoOrdenacao, bool crescente, out int qtd)
+        public List<DML.Beneficiario> Pesquisa(int iniciarEm, int quantidade, string campoOrdenacao, bool crescente, out int qtd)
         {
-            DAL.DaoCliente cli = new DAL.DaoCliente();
-            return cli.Pesquisa(iniciarEm, quantidade, campoOrdenacao, crescente, out qtd);
+            DAL.DaoBeneficiario ben = new DAL.DaoBeneficiario();
+            return ben.Pesquisa(iniciarEm, quantidade, campoOrdenacao, crescente, out qtd);
         }
 
         /// <summary>

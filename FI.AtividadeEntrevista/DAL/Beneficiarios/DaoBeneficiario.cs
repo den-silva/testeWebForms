@@ -39,9 +39,43 @@ namespace FI.AtividadeEntrevista.DAL
             DataSet ds = base.Consultar("FI_SP_VerificaCliente", parametros);
 
             return ds.Tables[0].Rows.Count > 0;
-        }        
+        }
 
-        
+        internal DML.Beneficiario Consultar(long Id)
+        {
+            List<System.Data.SqlClient.SqlParameter> parametros = new List<System.Data.SqlClient.SqlParameter>();
+
+            parametros.Add(new System.Data.SqlClient.SqlParameter("Id", Id));
+
+            DataSet ds = base.Consultar("FI_SP_ConsCliente", parametros);
+            List<DML.Beneficiario> ben = Converter(ds);
+
+            return ben.FirstOrDefault();
+        }
+
+        internal List<Beneficiario> Pesquisa(int iniciarEm, int quantidade, string campoOrdenacao, bool crescente, out int qtd)
+        {
+            List<System.Data.SqlClient.SqlParameter> parametros = new List<System.Data.SqlClient.SqlParameter>();
+
+            parametros.Add(new System.Data.SqlClient.SqlParameter("iniciarEm", iniciarEm));
+            parametros.Add(new System.Data.SqlClient.SqlParameter("quantidade", quantidade));
+            parametros.Add(new System.Data.SqlClient.SqlParameter("campoOrdenacao", campoOrdenacao));
+            parametros.Add(new System.Data.SqlClient.SqlParameter("crescente", crescente));
+
+            DataSet ds = base.Consultar("FI_SP_PesqBeneficiario", parametros);
+            List<DML.Beneficiario> ben = Converter(ds);
+
+            int iQtd = 0;
+
+            if (ds.Tables.Count > 1 && ds.Tables[1].Rows.Count > 0)
+                int.TryParse(ds.Tables[1].Rows[0][0].ToString(), out iQtd);
+
+            qtd = iQtd;
+
+            return ben;
+        }
+
+
         internal void Alterar(DML.Beneficiario beneficiario)
         {
             List<System.Data.SqlClient.SqlParameter> parametros = new List<System.Data.SqlClient.SqlParameter>();
