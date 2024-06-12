@@ -89,3 +89,18 @@
 
 
 </form>
+
+@section scripts{
+    <script src="jquery.js" type="text/javascript"></script>
+    <script src="jquery.maskedinput.js" type="text/javascript"></script>
+
+
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.0/jquery.mask.js"></script>
+    <script>
+        $(document).ready(function () {
+            /*var $seuCampoCpf = $("#CPF");*/
+            $("#CPF").mask('000.000.000-00', { reverse: true });
+        });
+    </script>
+}
