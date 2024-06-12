@@ -1,0 +1,75 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Denilson\\source\\repos\\testeWebForms\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{465BF3DA-5F32-456E-95C5-DD9CBF4B3A2D}|FI.WebAtividadeEntrevista\\WebAtividadeEntrevista.csproj|c:\\users\\denilson\\source\\repos\\testewebforms\\fi.webatividadeentrevista\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{465BF3DA-5F32-456E-95C5-DD9CBF4B3A2D}|FI.WebAtividadeEntrevista\\WebAtividadeEntrevista.csproj|solutionrelative:fi.webatividadeentrevista\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{465BF3DA-5F32-456E-95C5-DD9CBF4B3A2D}|FI.WebAtividadeEntrevista\\WebAtividadeEntrevista.csproj|c:\\users\\denilson\\source\\repos\\testewebforms\\fi.webatividadeentrevista\\models\\clientemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{465BF3DA-5F32-456E-95C5-DD9CBF4B3A2D}|FI.WebAtividadeEntrevista\\WebAtividadeEntrevista.csproj|solutionrelative:fi.webatividadeentrevista\\models\\clientemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38EFE996-02D9-4D78-B084-F3B5602E6ED2}|FI.AtividadeEntrevista\\FI.AtividadeEntrevista.csproj|c:\\users\\denilson\\source\\repos\\testewebforms\\fi.atividadeentrevista\\dml\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38EFE996-02D9-4D78-B084-F3B5602E6ED2}|FI.AtividadeEntrevista\\FI.AtividadeEntrevista.csproj|solutionrelative:fi.atividadeentrevista\\dml\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ClienteController.cs",
+              "DocumentMoniker": "C:\\Users\\Denilson\\source\\repos\\testeWebForms\\FI.WebAtividadeEntrevista\\Controllers\\ClienteController.cs",
+              "RelativeDocumentMoniker": "FI.WebAtividadeEntrevista\\Controllers\\ClienteController.cs",
+              "ToolTip": "C:\\Users\\Denilson\\source\\repos\\testeWebForms\\FI.WebAtividadeEntrevista\\Controllers\\ClienteController.cs",
+              "RelativeToolTip": "FI.WebAtividadeEntrevista\\Controllers\\ClienteController.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAcwDQAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T00:28:17.702Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ClienteModel.cs",
+              "DocumentMoniker": "C:\\Users\\Denilson\\source\\repos\\testeWebForms\\FI.WebAtividadeEntrevista\\Models\\ClienteModel.cs",
+              "RelativeDocumentMoniker": "FI.WebAtividadeEntrevista\\Models\\ClienteModel.cs",
+              "ToolTip": "C:\\Users\\Denilson\\source\\repos\\testeWebForms\\FI.WebAtividadeEntrevista\\Models\\ClienteModel.cs",
+              "RelativeToolTip": "FI.WebAtividadeEntrevista\\Models\\ClienteModel.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAAA8wBwAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T00:28:29.219Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Cliente.cs",
+              "DocumentMoniker": "C:\\Users\\Denilson\\source\\repos\\testeWebForms\\FI.AtividadeEntrevista\\DML\\Cliente.cs",
+              "RelativeDocumentMoniker": "FI.AtividadeEntrevista\\DML\\Cliente.cs",
+              "ToolTip": "C:\\Users\\Denilson\\source\\repos\\testeWebForms\\FI.AtividadeEntrevista\\DML\\Cliente.cs",
+              "RelativeToolTip": "FI.AtividadeEntrevista\\DML\\Cliente.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T00:09:31.195Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
