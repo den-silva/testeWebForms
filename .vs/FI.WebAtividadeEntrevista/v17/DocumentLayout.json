@@ -1,7 +1,24 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Denilson\\source\\repos\\testeWebForms\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{38EFE996-02D9-4D78-B084-F3B5602E6ED2}|FI.AtividadeEntrevista\\FI.AtividadeEntrevista.csproj|c:\\users\\denilson\\source\\repos\\testewebforms\\fi.atividadeentrevista\\dal\\beneficiarios\\daobeneficiario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38EFE996-02D9-4D78-B084-F3B5602E6ED2}|FI.AtividadeEntrevista\\FI.AtividadeEntrevista.csproj|solutionrelative:fi.atividadeentrevista\\dal\\beneficiarios\\daobeneficiario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38EFE996-02D9-4D78-B084-F3B5602E6ED2}|FI.AtividadeEntrevista\\FI.AtividadeEntrevista.csproj|c:\\users\\denilson\\source\\repos\\testewebforms\\fi.atividadeentrevista\\dal\\clientes\\daocliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38EFE996-02D9-4D78-B084-F3B5602E6ED2}|FI.AtividadeEntrevista\\FI.AtividadeEntrevista.csproj|solutionrelative:fi.atividadeentrevista\\dal\\clientes\\daocliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38EFE996-02D9-4D78-B084-F3B5602E6ED2}|FI.AtividadeEntrevista\\FI.AtividadeEntrevista.csproj|c:\\users\\denilson\\source\\repos\\testewebforms\\fi.atividadeentrevista\\bll\\bobeneficiario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38EFE996-02D9-4D78-B084-F3B5602E6ED2}|FI.AtividadeEntrevista\\FI.AtividadeEntrevista.csproj|solutionrelative:fi.atividadeentrevista\\bll\\bobeneficiario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38EFE996-02D9-4D78-B084-F3B5602E6ED2}|FI.AtividadeEntrevista\\FI.AtividadeEntrevista.csproj|c:\\users\\denilson\\source\\repos\\testewebforms\\fi.atividadeentrevista\\bll\\bocliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38EFE996-02D9-4D78-B084-F3B5602E6ED2}|FI.AtividadeEntrevista\\FI.AtividadeEntrevista.csproj|solutionrelative:fi.atividadeentrevista\\bll\\bocliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,8 +26,60 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DaoCliente.cs",
+              "DocumentMoniker": "C:\\Users\\Denilson\\source\\repos\\testeWebForms\\FI.AtividadeEntrevista\\DAL\\Clientes\\DaoCliente.cs",
+              "RelativeDocumentMoniker": "FI.AtividadeEntrevista\\DAL\\Clientes\\DaoCliente.cs",
+              "ToolTip": "C:\\Users\\Denilson\\source\\repos\\testeWebForms\\FI.AtividadeEntrevista\\DAL\\Clientes\\DaoCliente.cs",
+              "RelativeToolTip": "FI.AtividadeEntrevista\\DAL\\Clientes\\DaoCliente.cs",
+              "ViewState": "AQIAAJIAAAAAAAAAAAAuwK8AAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T14:59:48.963Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BoBeneficiario.cs",
+              "DocumentMoniker": "C:\\Users\\Denilson\\source\\repos\\testeWebForms\\FI.AtividadeEntrevista\\BLL\\BoBeneficiario.cs",
+              "RelativeDocumentMoniker": "FI.AtividadeEntrevista\\BLL\\BoBeneficiario.cs",
+              "ToolTip": "C:\\Users\\Denilson\\source\\repos\\testeWebForms\\FI.AtividadeEntrevista\\BLL\\BoBeneficiario.cs",
+              "RelativeToolTip": "FI.AtividadeEntrevista\\BLL\\BoBeneficiario.cs",
+              "ViewState": "AQIAADIAAAAAAAAAAAAIwD4AAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T14:55:06.182Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BoCliente.cs",
+              "DocumentMoniker": "C:\\Users\\Denilson\\source\\repos\\testeWebForms\\FI.AtividadeEntrevista\\BLL\\BoCliente.cs",
+              "RelativeDocumentMoniker": "FI.AtividadeEntrevista\\BLL\\BoCliente.cs",
+              "ToolTip": "C:\\Users\\Denilson\\source\\repos\\testeWebForms\\FI.AtividadeEntrevista\\BLL\\BoCliente.cs",
+              "RelativeToolTip": "FI.AtividadeEntrevista\\BLL\\BoCliente.cs",
+              "ViewState": "AQIAADgAAAAAAAAAAAAuwE0AAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T14:54:44.439Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DaoBeneficiario.cs",
+              "DocumentMoniker": "C:\\Users\\Denilson\\source\\repos\\testeWebForms\\FI.AtividadeEntrevista\\DAL\\Beneficiarios\\DaoBeneficiario.cs",
+              "RelativeDocumentMoniker": "FI.AtividadeEntrevista\\DAL\\Beneficiarios\\DaoBeneficiario.cs",
+              "ToolTip": "C:\\Users\\Denilson\\source\\repos\\testeWebForms\\FI.AtividadeEntrevista\\DAL\\Beneficiarios\\DaoBeneficiario.cs",
+              "RelativeToolTip": "FI.AtividadeEntrevista\\DAL\\Beneficiarios\\DaoBeneficiario.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAAAgwDoAAABxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T14:46:21.321Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"

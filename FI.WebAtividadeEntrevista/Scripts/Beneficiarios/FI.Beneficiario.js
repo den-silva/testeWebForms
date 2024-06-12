@@ -2,10 +2,13 @@ $(document).ready(function () {
     $('#botaoIncluir').click(function (e) {
         e.preventDefault();
         var dadosModal = {
-            CPFBeneficiario: $('#campo1').val(),
-            campo2: $('#campo2').val()
-            campo2: $('#campo2').val()
-            campo2: $('#campo2').val()
+            //CPFBeneficiario: $('#CPFBeneficiario').val(),
+            //NomeBeneficiario: $('#NomeBeneficiario').val(),
+            //CPF: $('#CPF').val()
+
+            "CPFBeneficiario": $(this).find("#CPFBeneficiario").val(),
+            "NomeBeneficiario": $(this).find("#NomeBeneficiario").val(),
+            "CPF": $(this).find("#CPF").val()
 
             // Adicione todos os campos que você precisa enviar
         };
