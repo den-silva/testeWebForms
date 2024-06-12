@@ -15,7 +15,7 @@ namespace FI.AtividadeEntrevista.DML
         /// Id
         /// </summary>
         public long Id { get; set; }
-        
+
         /// <summary>
         /// CEP
         /// </summary>
@@ -25,6 +25,11 @@ namespace FI.AtividadeEntrevista.DML
         /// Cidade
         /// </summary>
         public string Cidade { get; set; }
+
+        /// <summary>
+        /// CPF
+        /// </summary>
+        public string CPF { get; set; }
 
         /// <summary>
         /// E-mail
@@ -59,6 +64,6 @@ namespace FI.AtividadeEntrevista.DML
         /// <summary>
         /// Telefone
         /// </summary>
-        public string Telefone { get; set; }        
-    }    
+        public string Telefone { get; set; }
+    }
 }

@@ -39,6 +39,13 @@ namespace FI.AtividadeEntrevista.BLL
             return cli.Consultar(id);
         }
 
+        public string ConsultarCpf(string cpf)
+        {
+            DAL.DaoCliente cli = new DAL.DaoCliente();
+
+            return cli.ConsultarCpf(cpf);
+        }
+
         /// <summary>
         /// Excluir o cliente pelo id
         /// </summary>
@@ -65,7 +72,7 @@ namespace FI.AtividadeEntrevista.BLL
         public List<DML.Cliente> Pesquisa(int iniciarEm, int quantidade, string campoOrdenacao, bool crescente, out int qtd)
         {
             DAL.DaoCliente cli = new DAL.DaoCliente();
-            return cli.Pesquisa(iniciarEm,  quantidade, campoOrdenacao, crescente, out qtd);
+            return cli.Pesquisa(iniciarEm, quantidade, campoOrdenacao, crescente, out qtd);
         }
 
         /// <summary>

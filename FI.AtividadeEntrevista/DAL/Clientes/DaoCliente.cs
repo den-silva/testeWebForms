@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
+using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
 using FI.AtividadeEntrevista.DML;
@@ -20,9 +21,10 @@ namespace FI.AtividadeEntrevista.DAL
         internal long Incluir(DML.Cliente cliente)
         {
             List<System.Data.SqlClient.SqlParameter> parametros = new List<System.Data.SqlClient.SqlParameter>();
-            
+
             parametros.Add(new System.Data.SqlClient.SqlParameter("Nome", cliente.Nome));
             parametros.Add(new System.Data.SqlClient.SqlParameter("Sobrenome", cliente.Sobrenome));
+            parametros.Add(new System.Data.SqlClient.SqlParameter("CPF", cliente.CPF));
             parametros.Add(new System.Data.SqlClient.SqlParameter("Nacionalidade", cliente.Nacionalidade));
             parametros.Add(new System.Data.SqlClient.SqlParameter("CEP", cliente.CEP));
             parametros.Add(new System.Data.SqlClient.SqlParameter("Estado", cliente.Estado));
@@ -31,8 +33,9 @@ namespace FI.AtividadeEntrevista.DAL
             parametros.Add(new System.Data.SqlClient.SqlParameter("Email", cliente.Email));
             parametros.Add(new System.Data.SqlClient.SqlParameter("Telefone", cliente.Telefone));
 
-            DataSet ds = base.Consultar("FI_SP_IncClienteV2", parametros);
+
             long ret = 0;
+            DataSet ds = base.Consultar("FI_SP_IncClienteV2", parametros);
             if (ds.Tables[0].Rows.Count > 0)
                 long.TryParse(ds.Tables[0].Rows[0][0].ToString(), out ret);
             return ret;
@@ -53,6 +56,29 @@ namespace FI.AtividadeEntrevista.DAL
 
             return cli.FirstOrDefault();
         }
+
+        internal string ConsultarCpf(string cpf)
+        {
+            //string sp = "SELECT  FROM CLIENTES WITH(NOLOCK) WHERE cpf = " + cpf;
+
+            List<System.Data.SqlClient.SqlParameter> parametros = new List<System.Data.SqlClient.SqlParameter>();
+
+            parametros.Add(new System.Data.SqlClient.SqlParameter("CPF", cpf));
+
+            DataSet ds = base.Consultar("FI_SP_ConsCpf", parametros);
+
+            string result = "";
+
+            if (ds.Tables[0].Rows.Count > 0)
+            {
+                result = ds.Tables[0].Columns.ToString();
+                return result;
+            }
+            //List<DML.Cliente> cli = Converter(ds);
+            return result;
+        }
+
+
 
         internal bool VerificarExistencia(string CPF)
         {
@@ -112,6 +138,7 @@ namespace FI.AtividadeEntrevista.DAL
 
             parametros.Add(new System.Data.SqlClient.SqlParameter("Nome", cliente.Nome));
             parametros.Add(new System.Data.SqlClient.SqlParameter("Sobrenome", cliente.Sobrenome));
+            parametros.Add(new System.Data.SqlClient.SqlParameter("CPF", cliente.CPF));
             parametros.Add(new System.Data.SqlClient.SqlParameter("Nacionalidade", cliente.Nacionalidade));
             parametros.Add(new System.Data.SqlClient.SqlParameter("CEP", cliente.CEP));
             parametros.Add(new System.Data.SqlClient.SqlParameter("Estado", cliente.Estado));
@@ -149,6 +176,7 @@ namespace FI.AtividadeEntrevista.DAL
                     cli.Id = row.Field<long>("Id");
                     cli.CEP = row.Field<string>("CEP");
                     cli.Cidade = row.Field<string>("Cidade");
+                    cli.CPF = row.Field<string>("CPF");
                     cli.Email = row.Field<string>("Email");
                     cli.Estado = row.Field<string>("Estado");
                     cli.Logradouro = row.Field<string>("Logradouro");
