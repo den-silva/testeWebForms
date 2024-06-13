@@ -1,13 +1,13 @@
 const urlPostBeneficiario = '/Beneficiario/Incluir'
 $(document).ready(function () {
-    $('#botaoIncluir').click(function (e) {
+    $('#formModal').submit(function (e) {
         e.preventDefault();
         $.ajax({
             url: urlPostBeneficiario,
             method: 'POST',
             data: {
-                "CPFBeneficiario": $(this).find("#CPFBeneficiario").val(),
-                "NomeBeneficiario": $(this).find("#NomeBeneficiario").val(),
+                "CPFCliente": $(this).find("#CPFBeneficiario").val(),
+                "Nome": $(this).find("#NomeBeneficiario").val(),
                 "CPF": $(this).find("#CPF").val()
             },
             error:

@@ -38,9 +38,18 @@ namespace WebAtividadeEntrevista.Controllers
             }
             else
             {
-                string resp = bo.ConsultarCpf(model.CPF);
+                string respCpfBeneficiario = bo.ConsultarCpf(model.CPF);
 
-                if (resp != "")
+                
+                //if (bo.VerificarExistencia(model.CPF))
+                //{
+                //    if (bo.ConsultarCpf(model.CPFCliente))
+                //    {
+
+                //    }
+                //}
+
+                if (respCpfBeneficiario == "")
                 {
                     return Json("CPF já cadastrado na base");
                 }
