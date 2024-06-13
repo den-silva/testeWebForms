@@ -4,11 +4,18 @@
 }
 @section scripts{
     <script>
-    var urlAlteracao = '@Url.Action("Alterar", "Cliente", new { area = "" })';
-    var urlClienteList = '@Url.Action("ClienteList", "Cliente", new { area = "" })';
+        var urlAlteracao = '@Url.Action("Alterar", "Cliente", new { area = "" })';
+        var urlClienteList = '@Url.Action("ClienteList", "Cliente", new { area = "" })';
+
+        var urlBeneficiarioList = '@Url.Action("BeneficiarioList", "Beneficiario", new { area = "" })';
+        var urlAlteracaoBeneficiario = '@Url.Action("Alterar", "Beneficiario", new { area = "" })';
+
+        $("#CPF").mask("000.000.000-00");
+        $('.CEP').mask('00000-000');
 
     </script>
     @Scripts.Render("~/bundles/listClientes")
+    @Scripts.Render("~/bundles/listBeneficiario")
 
 }
 <h2>@Html.Raw(ViewBag.Title)</h2>

@@ -3,10 +3,29 @@
     ViewBag.Title = "Cadastrar Cliente";
 }
 @section scripts{
+
+
+
+
+
+
     <script>
         var urlPost = '@Url.Action("Incluir", "Cliente", new { area = "" })';
+
+         //window.urlPostBeneficiario = '@Url.Action("Incluir", "Beneficiario")';
+         window.CPF = $(document).ready(function ()
+         {
+             var urlBeneficiarioList = '@Url.Action("BeneficiarioList", "Beneficiario", new { area = "" })';
+             var urlAlteracaoBeneficiario = '@Url.Action("Alterar", "Beneficiario", new { area = "" })';
+
+             $("#CPF").mask("000.000.000-00");
+             $('.CEP').mask('00000-000');
+         });
     </script>
-    @Scripts.Render("~/bundles/clientes")
+
+    @Scripts.Render("~/bundles/beneficiarios")
+    @Scripts.Render("~/bundles/listBeneficiario")
+    @Scripts.Render("~/bundles/altBeneficiarios")
 }
 <h2>@Html.Raw(ViewBag.Title)</h2>
 @Html.Partial("Forms")

@@ -1,14 +1,19 @@
-//const urlPostBeneficiario = '/Beneficiario/Incluir'
+
 $(document).ready(function () {
+    if (obj) {
+        $('#formModal #Nome').val(obj.Nome);
+        $('#formModal #CPF').val(obj.CPF);
+    }
+
     $('#formModal').submit(function (e) {
         e.preventDefault();
+
         $.ajax({
-            url: urlPostBeneficiario,
-            method: 'POST',
+            url: urlAlteracaoBeneficiario,
+            method: "POST",
             data: {
-                "CPFCliente": $(this).find("#CPFBeneficiario").val(),
-                "Nome": $(this).find("#NomeBeneficiario").val(),
-                "CPF": $(this).find("#CPF").val()
+                "NOME": $(this).find("#Nome").val(),
+                "CPF": $(this).find("#CPF").val()        
             },
             error:
                 function (r) {
@@ -20,11 +25,13 @@ $(document).ready(function () {
             success:
                 function (r) {
                     ModalDialog("Sucesso!", r)
-                    $("#exampleModal")[0].reset();
-                },
+                    $("#formModal")[0].reset();
+                    window.location.href = urlRetorno;
+                }
         });
-    });
-});
+    })
+
+})
 
 function ModalDialog(titulo, texto) {
     var random = Math.random().toString().replace('.', '');

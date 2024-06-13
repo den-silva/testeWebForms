@@ -116,7 +116,7 @@ namespace WebAtividadeEntrevista.Controllers
                 model = new BeneficiarioModel()
                 {
                     CPF = model.CPF,
-                    CPFCliente = model.CPFCliente,
+                    //CPFCliente = model.CPFCliente,
                     Nome = model.Nome
                 };
             }

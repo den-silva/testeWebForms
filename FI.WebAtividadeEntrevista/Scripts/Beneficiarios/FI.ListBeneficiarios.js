@@ -1,3 +1,5 @@
+const urlBeneficiarioList = '/Beneficiario/BeneficiarioList'
+const urlAlteracaoBeneficiario = '/Beneficiario/Alterar'
 
 $(document).ready(function () {
 
