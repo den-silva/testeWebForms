@@ -135,6 +135,7 @@
 
 
                     </div>
+                    <table id="gridBeneficiarios" class="table"></table>
 
                     <div class="row">
                         <div class="col-sm-5">
@@ -165,11 +166,15 @@
     <script>
         @Scripts.Render("~/bundles/jquery")
         @Scripts.Render("~/bundles/beneficiarios")
+        @Scripts.Render("~/bundles/listBeneficiario")
         @Scripts.Render("~/bundles/mask")
+
+        var urlBeneficiarioList = '@Url.Action("BeneficiarioList", "Beneficiario", new { area = "" })';
+        var urlAlteracaoBeneficiario = '@Url.Action("Alterar", "Beneficiario", new { area = "" })';
 
         window.urlPostBeneficiario = '@Url.Action("Incluir", "Beneficiario")';
         window.CPF = $(document).ready(function ()
-        {            
+        {
             $("#CPF").mask("000.000.000-00");
             $('.CEP').mask('00000-000');
         });

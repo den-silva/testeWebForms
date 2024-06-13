@@ -193,6 +193,7 @@
     <Compile Include="Models\BeneficiarioModel.cs" />
     <Compile Include="Models\ClienteModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Content Include="Scripts\Beneficiarios\FI.ListBeneficiarios.js" />
     <Content Include="Scripts\jquery.maskplugin.js" />
   </ItemGroup>
   <ItemGroup>

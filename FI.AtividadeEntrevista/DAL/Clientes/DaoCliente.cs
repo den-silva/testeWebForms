@@ -80,7 +80,7 @@ namespace FI.AtividadeEntrevista.DAL
 
 
 
-        internal bool VerificarExistencia(string CPF)
+        internal int VerificarExistencia(string CPF)
         {
             List<System.Data.SqlClient.SqlParameter> parametros = new List<System.Data.SqlClient.SqlParameter>();
 
@@ -88,7 +88,11 @@ namespace FI.AtividadeEntrevista.DAL
 
             DataSet ds = base.Consultar("FI_SP_VerificaCliente", parametros);
 
-            return ds.Tables[0].Rows.Count > 0;
+            int i = 0;            
+
+            i = Convert.ToInt32(ds.Tables[0].Rows[0]["ID"]);
+
+            return i;
         }
 
         internal List<Cliente> Pesquisa(int iniciarEm, int quantidade, string campoOrdenacao, bool crescente, out int qtd)

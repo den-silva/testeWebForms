@@ -40,15 +40,6 @@ namespace WebAtividadeEntrevista.Controllers
             {
                 string respCpfBeneficiario = bo.ConsultarCpf(model.CPF);
 
-                
-                //if (bo.VerificarExistencia(model.CPF))
-                //{
-                //    if (bo.ConsultarCpf(model.CPFCliente))
-                //    {
-
-                //    }
-                //}
-
                 if (respCpfBeneficiario == "")
                 {
                     return Json("CPF já cadastrado na base");
@@ -56,14 +47,32 @@ namespace WebAtividadeEntrevista.Controllers
 
                 else
                 {
-                    model.Id = bo.Incluir(new Beneficiario()
-                    {                       
-                        CPF = model.CPF,
-                        CPFCliente = model.CPFCliente,            
-                        Nome = model.Nome,  
-                    });
+                    int id = bo.VerificarExistencia(model.CPF);
+                    if (id != 0)
+                    {
+                        bool b = bo.VerificarCpfClienteBenef(id);
+                        if (b == true)
+                        {
+                            return Json("CPF de cliente já beneficia outro usuário");
+                        }
 
-                    return Json("Cadastro efetuado com sucesso");
+                        else
+                        {
+
+                            model.Id = bo.Incluir(new Beneficiario()
+                            {
+                                CPF = model.CPF,
+                                IdCliente = id,
+                                Nome = model.Nome,
+                            });
+
+                            return Json("Cadastro efetuado com sucesso");
+                        }
+                    }
+                    else
+                    {
+                        return Json("CPF de cliente não existe");
+                    }
                 }
             }
         }
