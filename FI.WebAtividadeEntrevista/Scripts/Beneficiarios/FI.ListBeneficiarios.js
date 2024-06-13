@@ -25,7 +25,18 @@ $(document).ready(function () {
                 Alterar: {
                     title: '',
                     display: function (data) {
-                        return '<button onclick="window.location.href=\'' + urlAlteracaoBeneficiario + '/' + data.record.Id + '\'" class="btn btn-primary btn-sm">Alterar</button>';
+                        //return '<button onclick="window.location.href=\'' + urlAlteracaoBeneficiario + '/' + data.record.Id + '\'" class="btn btn-primary btn-sm">Alterar</button>';
+                        return '<button class="btn btn-primary btn-sm data-target="#exampleModal2 ">Alterar</button>';
+
+                    }
+                },
+
+                 Deletar: {
+                    title: '',
+                    display: function (data) {
+                        //return '<button onclick="window.location.href=\'' + urlAlteracaoBeneficiario + '/' + data.record.Id + '\'" class="btn btn-primary btn-sm">Alterar</button>';
+                        return '<button class="btn btn-danger btn-sm data-target="#exampleModal2 ">Deletar</button>';
+
                     }
                 }
             }
