@@ -43,6 +43,11 @@ namespace WebAtividadeEntrevista
 
             bundles.Add(new ScriptBundle("~/bundles/mask").Include(
                         "~/Scripts/jquery.maskplugin.js"));
+            bundles.Add(new ScriptBundle("~/bundles/validacao").Include(
+                        "~/Scripts/validacao.js"));
+
+            
+
             bundles.Add(new ScriptBundle("~/bundles/modalAjax").Include(
                         "~/Scripts/Beneficiarios/FI.Beneficiario.js"));
 
